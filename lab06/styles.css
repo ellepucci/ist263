@@ -1,0 +1,11 @@
+h1 {color:palevioletred;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {color:palevioletred;
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.evenrow {background-color:aqua;}
