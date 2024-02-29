@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS</title>
+    <style>
+        h2 {background-color: #ffd15e;}
+        /* from now on you will use hexadecimal colors v */
+        a:visited {color: #00ff00;}
+        a:hover {background-color: #efefef;}
+        /* ^ pseudo selector, you need the : */
+        body {background-color: #3a1212;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url("otto.png");
+            /* background images repeat */
+            background-size: 5%;
+            /* sizing background image */
+        }
+        .bgimage {background-image: url("flagotto.gif");}
+            {background-size: 10% ;}
+        .box {background-color: #ffffff;
+            border: 5px solid #ff294d; 
+            /* border is a combo property */
+            padding: 30px;
+            /* padding is space inside the border */
+            margin: 30px;}
+            /* margin is space outside the border */
+    </style>
+</head>
+<body>
+    <h1>More CSS</h1>
+        <h2>Hexadecimal Colors</h2>
+        <h2>Pseudo Selectors</h2>
+            <a href="http://wwww.microsoft.com">Microsoft</a><br>
+            <a href="http://wwww.apple.com">Apple</a>
+        <h2>Background Images</h2>
+            <p class="bgimage">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quisquam excepturi nemo eligendi consectetur suscipit ipsa iure, expedita, non quia aliquid quae laboriosam, voluptatibus reiciendis incidunt temporibus laborum. Fugit, adipisci? </p>
+        <h2>Box Model</h2>
+                <p class="box" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit vel impedit soluta, quas cum maiores adipisci dicta voluptate repellat. Enim deserunt nulla sed voluptates aspernatur possimus, voluptate mollitia veritatis perspiciatis.</p>
+</body>
+</html>
