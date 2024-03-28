@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viewport Size Test</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  /* Style for large viewport */
+  .large {
+    display: none;
+  }
+
+  /* Style for small viewport */
+  .small {
+    display: none;
+  }
+
+  /* Media query for viewport over 800 pixels */
+  @media screen and (min-width: 801px) {
+    .large {
+      display: block;
+    }
+  }
+
+  /* Media query for viewport 800 pixels or less */
+  @media screen and (max-width: 800px) {
+    .small {
+      display: block;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="large">
+    <h1>I'm large.</h1>
+  </div>
+  <div class="small">
+    <h1>I'm small.</h1>
+  </div>
+</body>
+</html>

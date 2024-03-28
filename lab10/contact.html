@@ -1,0 +1,82 @@
+<!DOCTYPE html>     
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-info,
+        .forms-and-embed {
+            background-color: lightgray; /* Change to your desired background color */
+            padding: 20px; /* Add padding for better appearance */
+            margin-bottom: 20px; /* Add some margin to separate the boxes */
+            margin-left: 20px; /* Add left margin to create space from the edge */
+            margin-right: 20px; /* Add right margin to create space from the edge */
+            border-radius: 10px; /* Add rounded corners */
+            margin-top: 20px; /* Add margin at the top to separate the rows */
+        }
+
+        /* Adjust margins for smaller screens */
+        @media screen and (max-width: 600px) {
+            .contact-info,
+            .forms-and-embed {
+                margin-left: 10px; /* Adjust margin for smaller screens */
+                margin-right: 10px; /* Adjust margin for smaller screens */
+                padding: 15px; /* Adjust padding for smaller screens */
+            }
+        }
+
+        /* Flexbox grid */
+        .forms-and-embed {
+            display: flex; /* Add flexbox layout */
+            flex-wrap: wrap; /* Allow flex items to wrap */
+        }
+
+        .forms-and-embed > div {
+            flex: 1; /* Equal width for child divs */
+            margin: 10px; /* Add margin between child elements */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="contact.html">Contact</a> |
+    </nav>
+    <h1>Contact</h1>
+    <div class="contact-info">
+        <div>
+            <p>Elle Pucci <br>
+            Hinds Hall <br>
+            Syracuse, NY 13244<br></p>
+        </div>
+        <div>
+            <a href="mailto:ekpucci@syr.edu">Elle Pucci Email</a><br>
+            <a href="https://www.linkedin.com/in/elle-pucci"><img src="../Images/logosize.gif" alt="illustration of Linkedin logo">LinkedIn Profile</a>
+        </div>
+    </div>
+    <div class="forms-and-embed">
+        <div>
+            <h2>Forms</h2>
+            <form action="https://formspree.io/f/meqyaddk" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="3" cols="60"></textarea><br>
+                <p>Did you click my LinkedIn:</p>
+                <input type="radio" id="yes" name="yesno" value="yes">
+                <label for="yes">yes</label>
+                <input type="radio" id="no" name="yesno" value="no">
+                <label for="no">no</label>
+                <input type="submit" value="Send Form">
+            </form>
+        </div>
+        <div>
+            <h2>Embedding</h2>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1525381305973!2d-76.13594292372883!3d43.03822197113793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1706805933689!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>

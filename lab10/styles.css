@@ -1,0 +1,61 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #C80410;
+}
+
+nav {
+    background-color: #EA1EA4;
+    border: 5px solid #FFAD3A;
+    padding: 30px;
+    margin: 30px;
+}
+
+nav a {
+    color: #FFAD3A;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+}
+
+h1 {
+    color: #EA1EA4;
+    text-align: center;
+}
+
+/* Styles for smaller viewports */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 10px; /* Adjust padding for smaller viewports */
+    }
+
+    nav a {
+        display: block; /* Convert links to block elements */
+        text-align: center; /* Center align links */
+        margin: 10px 0; /* Add margin to separate links */
+    }
+
+    nav span.pipe {
+        display: none; /* Hide pipe characters */
+    }
+}
+
+/* Styles for larger viewports */
+@media screen and (min-width: 769px) {
+    nav {
+        padding: 30px; /* Revert padding for larger viewports */
+    }
+
+    nav a {
+        display: inline-block; /* Revert links to inline-block for desktop */
+        margin: 0 10px; /* Adjust margin for desktop */
+    }
+
+    nav span.pipe {
+        display: inline; /* Show pipe characters */
+    }
+}
