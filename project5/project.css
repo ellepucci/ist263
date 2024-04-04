@@ -41,6 +41,16 @@ header {
     flex: 1;
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .author-info {
+        width: 100%; /* Make author info full width on small screens */
+    }
+}
 
 .recipe-image {
     flex: 0 0 auto;
