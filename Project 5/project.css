@@ -1,0 +1,213 @@
+/* Home Page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Center the content horizontally */
+    padding: 20px;
+}
+
+
+.author-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.author-image {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.author-details {
+    flex: 1;
+}
+
+
+.recipe-image {
+    flex: 0 0 auto;
+    max-width: 60%;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.image-container {
+    flex: 0 0 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.image-container p {
+    margin-bottom: 10px;
+}
+
+.image-container a {
+    color: blue;
+    text-decoration: none;
+}
+
+.image-container a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styles specific to home page */
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Styles specific to alcoholic.html */
+
+.drink-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.drink-info {
+    flex: 1;
+    text-align: left;
+}
+
+.drink-info h2 {
+    margin-top: 0;
+}
+
+.drink-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-image {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .author-info {
+        width: 100%;
+    }
+}
+
+/* Styles specific to mocktail.html */
+
+.drink-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.drink-info {
+    flex: 1;
+    text-align: left;
+}
+
+.drink-info h2 {
+    margin-top: 0;
+}
+
+.drink-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-image {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .author-info {
+        width: 100%;
+    }
+}
