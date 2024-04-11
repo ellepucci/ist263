@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 12 Slideshow</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #111111;
+            color: #ffffff;
+        }
+        #slideshow-container {
+            background-color: #000000;
+            width: 1200px;
+            margin: auto; /* margin auto is centering this container */
+        }
+        #bigimages {
+            margin-right: 100px;
+            float: left; /* Float the big images container to the left */
+        }
+        #planetinfo {
+            padding: 100px;
+            float: right; /* Float the planet info container to the right */
+        }
+        #thumbnails {
+            width: 840px;
+            margin: auto;
+            padding-top: 20px;
+            float: left; /* Float the thumbnails container to the left */
+        }
+        /* Initially hide all large images and associated texts */
+        #bigimages img, #planetinfo > div {
+            display: none;
+        }
+        /* Display Mercury's image and text */
+        #mercury, #mercuryinfo {
+            display: block;
+        }
+    </style>
+    <script>
+        function planetsOff() {
+            // Turn off display for all planet images
+            var planetImages = document.querySelectorAll('#bigimages img');
+            var planetTexts = document.querySelectorAll('#planetinfo > div');
+            for (var i = 0; i < planetImages.length; i++) {
+                planetImages[i].style.display = 'none';
+                planetTexts[i].style.display = 'none';
+            }
+        }
+
+        function mercuryOn() {
+            // Display Mercury's image and text
+            document.getElementById('mercury').style.display = 'block';
+            document.getElementById('mercuryinfo').style.display = 'block';
+        }
+        // Create similar functions for other planets
+
+    </script>
+</head>
+<body>
+<div id="slideshow-container">
+    <div id="bigimages">
+        <img src="https://laferger.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercury">
+        <!-- Add other planet images here -->
+    </div>
+    <div id="planetinfo">
+        <!-- Add planet info divs here -->
+    </div>
+    <div id="thumbnails">
+        <!-- Add onclick attribute to each thumbnail image -->
+        <img src="https://laferger.github.io/ist263/images/mecury.jpg" alt="mercury" id="mercurythumb" onclick="planetsOff(); mercuryOn();">
+        <!-- Add similar onclick attributes to other thumbnails with corresponding functions -->
+    </div>
+</div>
+
+</body>
+</html>
