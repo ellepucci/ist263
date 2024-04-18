@@ -1,14 +1,11 @@
 /* Common styles */
 
 h1 {
-    font-size: 60px;
-  }
+    font-size: 60px;}
 
   p {
     font-size: 25px;
-    line-height: 50px;
-  }
-
+    line-height: 50px }
 
 body {
     font-family: Arial, sans-serif;
