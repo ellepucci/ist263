@@ -14,27 +14,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
-    color: #C80410;
+    background-color: #FFD700;
+    color:#4B0082;
 }
 
 nav {
-    background-color: #EA1EA4;
-    border: 5px solid #FFAD3A;
+    background-color:#FFD700;
+    border: 5px solid #FF6347;
     padding: 30px;
     margin: 30px;
 }
 
 nav a {
-    color: #FFAD3A;
+    color: #00CED1;
 }
 
 nav a:hover {
-    background-color: #FFFFFF;
+    background-color: #FF6347;
 }
 
 h1 {
-    color: #EA1EA4;
+    color: #4B0082;
     text-align: center;
 }
 
