@@ -6,18 +6,78 @@
     <title>Alcoholic Drink Recipes</title>
     <link rel="stylesheet" href="project.css">
 </head>
+<style>
+    .menubutn {
+        display: none;
+    }
+    @media screen and (max-width: 520px) {
+        
+    .menubutn {
+        display: block;
+    }
+    .sidenav {
+            position: fixed;
+            background-color: #232323;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            border: 5px solid #7d7d7d;
+            height: 100%;
+            top: 0;
+            left: -10px;
+            border-radius: 5px;
+            
+        }
+        .closebtn {
+            color: #ffffff;
+        }
+        .s401 a {
+            display: none;
+        }
+        .menubutn {
+            text-align: center;
+            display: block;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .menubutn:hover{
+            background-color: #ddd;
+            color: #333;
+        
+        }
+        .sidenav a {
+            padding: 8px 8px 8px 16px;
+            font-size: 20px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            display: block;
+        }
+    }
+</style>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.display = "block";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.display = "none";
+    }
+</script>
+</head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="project5.html">Home</a></li>
-            <li><a href="alcoholic.html">Alcoholic</a></li>
-            <li><a href="mocktail.html">Mocktail</a></li>
-        </ul>
-    </nav>
+<a onclick="openNav()" class="menubutn">MENU </a>
+<nav id="mySidenav" class="sidenav">
+    <a href="#main" tabindex="1" class="skip">Skip to content</a><br>
+    <ul>
+        <li><a href="project5.html">Home</a></li>
+        <li><a href="alcoholic.html">Alcoholic</a></li>
+        <li><a href="mocktail.html">Mocktail</a></li>
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a></li>
+    </ul>
+</nav>
     <header>
         <h1>Alcoholic Drink Recipes</h1>
     </header>
-
+    <main>
      <!-- First Drink -->
      <div class="drink-container">
         <div class="drink-info">
@@ -111,6 +171,6 @@
             <img src="paperplane.jpg" alt="Paper Plane">
         </div>
     </div>
-
+    </main>
 </body>
 </html>
